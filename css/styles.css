@@ -168,7 +168,8 @@ a {
 }
 
 .person-social-link:hover,
-.person-social-link:focus .join-social-link:hover,
+.person-social-link:focus,
+.join-social-link:hover,
 .join-social-link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
