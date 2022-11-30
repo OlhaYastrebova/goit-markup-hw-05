@@ -102,13 +102,13 @@ ul {
   position: relative;
 }
 .link.current::before {
+  position: absolute;
+  top: 46px;
   display: inline-block;
   content: "";
   width: 100%;
   height: 4px;
   background-color: #2196f3;
-  position: absolute;
-  top: 46px;
 }
 a {
   text-decoration: none;
