@@ -90,11 +90,11 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -130,7 +130,6 @@ a {
 .smartphone-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email {
   margin-right: 30px;
@@ -144,6 +143,7 @@ a {
 .smartphone-link {
   fill: var(--primary-text-color);
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-contact {
   margin-left: 10px;
@@ -156,6 +156,8 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-social-link {
@@ -167,6 +169,8 @@ a {
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .person-social-link:hover,
@@ -175,8 +179,6 @@ a {
 .join-social-link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email .link-contact {
@@ -373,33 +375,29 @@ a {
 }
 
 /* Наші клієнти */
-.client-logo {
+.client-company {
   padding: 16px 32px;
   border: 1px solid;
   border-radius: 4px;
   color: #afb1b8;
-}
-.client {
-  margin-right: 30px;
-}
-.client:last-child {
-  margin-right: 0;
-}
-
-.client-company {
   fill: #afb1b8;
-}
-
-.client-logo:hover,
-.client-logo:focus {
-  color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+.client {
+  display: flex;
+}
+.client-logo {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .client-company:hover,
 .client-company:focus {
   fill: var(--accent-color);
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Футер */
 footer {
@@ -489,6 +487,8 @@ main {
   padding: 6px 22px;
   background: #f5f4fa;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-item:last-child {
   margin-right: 0;
@@ -499,8 +499,6 @@ main {
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-set {
   display: flex;
